@@ -1,0 +1,19 @@
+package strings
+
+func interalFunction() {
+	// In Go, a name is exported (visible outside the package) if it begins with
+	// with a capital letter
+}
+
+// Must begin with a capital letter in order to be exported
+func CountOddEven(s string) (odds, evens int) {
+	odds, evens = 0, 0
+	for _, c := range s {
+		if int(c)%2 == 0 {
+			evens++
+		} else {
+			odds++
+		}
+	}
+	return
+}
